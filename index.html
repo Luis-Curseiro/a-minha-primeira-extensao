@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Minha Extensão Owlbear Rodeo</title>
+    <title>Extensão Interativa</title>
     <style>
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 20px;
             text-align: center;
-            background-color: #333; /* Cor escura para combinar com o tema do Owlbear */
+            background-color: #333;
             color: #eee;
         }
         h1 {
-            color: #FFC107; /* Um amarelo para destaque */
+            color: #FFC107;
+        }
+        #room-name {
+            font-weight: bold;
+            color: #1aff00; /* Um verde brilhante para o nome da sala */
+            font-size: 1.2em;
+            margin-top: 10px;
         }
     </style>
+    
+    <script src="https://unpkg.com/@owlbear-rodeo/sdk@latest/dist/sdk.js"></script>
 </head>
 <body>
-    <h1>🎉 Olá, Owlbear Rodeo! 🎉</h1>
-    <p>Sua primeira extensão carregou com sucesso.</p>
-    <p>O próximo passo é adicionar interatividade usando o **Owlbear Rodeo SDK**.</p>
+    <h1>Extensão Carregada!</h1>
+    <p>Você está na sala:</p>
+    
+    <p id="room-name">Buscando nome da sala...</p>
+
+    <script>
+        // Função principal que vai inicializar a extensão
+        async function initializeExtension() {
+            // Acessa o objeto global do SDK (OR)
+            const OR = window.OR;
+
+            // Conecta e espera a inicialização do cliente do Owlbear Rodeo
+            // `await` significa que o código vai "pausar" aqui até que a conexão seja estabelecida
+            await OR.onReady();
+            
+            // PASSO 3: Obtém as informações da sala (Room)
+            const room = await OR.room.getRoom();
+
+            // PASSO 4: Encontra o elemento HTML para atualizar
+            const roomNameElement = document.getElementById('room-name');
+            
+            // PASSO 5: Atualiza o texto do elemento HTML com o nome da sala
+            if (room && room.name) {
+                roomNameElement.textContent = room.name;
+            } else {
+                roomNameElement.textContent = "Nome da Sala não encontrado.";
+            }
+        }
+
+        // Chama a função para começar a execução
+        initializeExtension();
+    </script>
 </body>
 </html>
