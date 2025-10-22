@@ -1,6 +1,7 @@
 {
   "name": "Minha Primeira Extensão",
   "version": "1.0.0",
+  "manifest_version": 2, // <-- Linha ADICIONADA para resolver o erro
   "author": "Seu Nome",
   "description": "Um ponto de partida simples para o desenvolvimento de extensões.",
   "action": {
