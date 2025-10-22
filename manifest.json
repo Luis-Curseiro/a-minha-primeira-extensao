@@ -1,14 +1,14 @@
 {
   "name": "Minha Primeira Extensão",
   "version": "1.0.0",
-  "manifest_version": 1, // CORRIGIDO: Deve ser 1, conforme a documentação oficial.
+  "manifest_version": 1, 
   "author": "Luís",
   "description": "Um ponto de partida simples para o desenvolvimento de extensões.",
   "action": {
-    "title": "Abrir Extensão", // Corresponde ao `title` do tutorial
-    "icon": "/icon.svg",      // Corresponde ao `icon` do tutorial (usaremos um ícone mais simples abaixo)
-    "popover": "./index.html", // Corresponde ao `popover` do tutorial, apontando para o seu index.html
-    "height": 600,           // Configurações do tamanho do popover (opcional, mas bom para consistência)
+    "title": "Abrir Extensão", 
+    "iconUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMjAuNjEgMTAuMThsLTEtLjk1QzE2Ljg5IDYuMDYgMTQuMDkgNSA5IDVsLTQgNCAzIDMgNC45OS00LjU2IDMuODcgMy44N0wxMiA5LjY0VjE3bDEuMjUgMS4yNS0yLjUgMi41TDEwIDIzVjE5LjY3bC0zLTNMNSA1LjcgMSAxLjUgMi4yMS4xNCAyMy40IDE3LjEybC0yLjEuOTMtLjI4LS42Mi0zLjc1LTMuNzUgMi42Mi0uMDJjLjA3LS40MS4yMi0uODMuNDQtMS4yNCA1LjUxLTguMTEgMS4xMi01LjQtMi4xNi04LjY4eiIvPjwvc3ZnPg==",
+    "popoverUrl": "./index.html", // Volta ao formato original
+    "height": 600,          
     "width": 400
   }
 }
