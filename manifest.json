@@ -6,7 +6,7 @@
   "description": "Um ponto de partida simples para o desenvolvimento de extensões.",
   "action": {
     "title": "Abrir Extensão", 
-    "iconUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMjAuNjEgMTAuMThsLTEtLjk1QzE2Ljg5IDYuMDYgMTQuMDkgNSA5IDVsLTQgNCAzIDMgNC45OS00LjU2IDMuODcgMy44N0wxMiA5LjY0VjE3bDEuMjUgMS4yNS0yLjUgMi41TDEwIDIzVjE5LjY3bC0zLTNMNSA1LjcgMSAxLjUgMi4yMS4xNCAyMy40IDE3LjEybC0yLjEuOTMtLjI4LS42Mi0zLjc1LTMuNzUgMi42Mi0uMDJjLjA3LS40MS4yMi0uODMuNDQtMS4yNCA1LjUxLTguMTEgMS4xMi01LjQtMi4xNi04LjY4eiIvPjwvc3ZnPg==",
+    "iconUrl": "/icon.svg",
     "popoverUrl": "./index.html",
     "height": 600,
     "width": 400
