@@ -1,13 +1,11 @@
 {
-  "name": "Minha Primeira Extensão",
+  "name": "Hello, World!",
   "version": "1.0.0",
-  "manifest_version": 1, 
-  "author": "Luís",
-  "description": "Um ponto de partida simples para o desenvolvimento de extensões.",
+  "manifest_version": 1,
   "action": {
-    "title": "Abrir Extensão", 
-    "iconUrl": "/icon.svg",
-    "popoverUrl": "./index.html",
+    "title": "Hello, World!",
+    "icon": "/icon.svg",
+    "popover": "/",
     "height": 600,
     "width": 400
   }
