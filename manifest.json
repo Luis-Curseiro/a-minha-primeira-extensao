@@ -1,6 +1,6 @@
 {
-  "name": "Hello, World!",
-  "version": "1.0.0",
+  "name": "Minha Primeira Extensão",
+  "version": "1.0.1",
   "manifest_version": 1,
   "action": {
     "title": "Hello, World!",
